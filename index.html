@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>لعبة مهندس الخشب</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h2>اسحب نوع الخشب إلى المكان المناسب:</h2>
+        
+        <!-- مناطق البناء -->
+        <div class="dropzone" id="columns">الأعمدة</div>
+        <div class="dropzone" id="roof">السقف</div>
+        <div class="dropzone" id="floor">الأرضية</div>
+
+        <!-- أنواع الخشب -->
+        <div id="wood-types">
+            <div class="wood" id="oak" draggable="true">
+                <img src="images/oak.jpg" alt="سنديان">
+                <span>خشب السنديان</span>
+            </div>
+            <div class="wood" id="pine" draggable="true">
+                <img src="images/pine.jpg" alt="صنوبر">
+                <span>خشب الصنوبر</span>
+            </div>
+            <div class="wood" id="beech" draggable="true">
+                <img src="images/beech.jpg" alt="زان">
+                <span>خشب الزان</span>
+            </div>
+        </div>
+
+        <!-- زر التقييم والنتيجة -->
+        <button onclick="evaluateChoice()">تقييم البناء</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
